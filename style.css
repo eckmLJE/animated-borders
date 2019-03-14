@@ -1,30 +1,94 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 section {
-  padding: 16px;
+  margin: 0;
+  padding: 20px;
 }
 
 .card-container {
-  padding: 8px;
+  position: relative;
+  margin: 8px auto;
+  padding: 0.5rem;
+  width: 300px;
+  height: 130px;
 }
 
 .card {
-  padding: 8px;
+  position: relative;
+  margin: 0;
+  padding: 0.75rem;
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
+  cursor: pointer;
 }
 
 .card h2 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
 }
 
 .card h3 {
   font-size: 1rem;
-  color: silver;
-  margin: 0;
+  color: darkgrey;
+  margin: 4px 0;
   padding: 0;
 }
 
 .card p {
-  font-size: 0.8rem;
-  margin: 0;
+  font-size: 0.9rem;
+  margin: 8px 0;
   padding: 0;
+}
+
+.slider {
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+
+  background-color: black;
+}
+
+.slider-top {
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+.slider-bottom {
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+.slider-left {
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 0%;
+  transition: height 1s ease;
+}
+
+.slider-right {
+  right: 0;
+  top: 0;
+  width: 2px;
+  height: 0%;
+  transition: height 1s ease;
+}
+
+.card-container:hover .slider-top,
+.card-container:hover .slider-bottom {
+  width: 100%;
+}
+
+.card-container:hover .slider-left,
+.card-container:hover .slider-right {
+  height: 100%;
 }
