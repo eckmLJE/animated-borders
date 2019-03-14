@@ -1,0 +1,23 @@
+{
+  "name": "animated-borders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eckmLJE/animated-borders.git"
+  },
+  "keywords": [],
+  "author": "Lucas Eckman <lucas.eckman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eckmLJE/animated-borders/issues"
+  },
+  "homepage": "https://github.com/eckmLJE/animated-borders#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
