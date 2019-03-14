@@ -11,7 +11,7 @@ section {
   position: relative;
   margin: 8px auto;
   padding: 0.5rem;
-  width: 300px;
+  width: 375px;
   height: 130px;
 }
 
@@ -22,6 +22,7 @@ section {
   width: calc(100% - 1.5rem);
   height: calc(100% - 1.5rem);
   cursor: pointer;
+  box-shadow: none;
 }
 
 .card h2 {
@@ -47,40 +48,36 @@ section {
   position: absolute;
   display: block;
   margin: 0 auto;
-
+  transition: width 0.75s, height 0.75s;
   background-color: black;
 }
 
 .slider-top {
   left: 0;
   top: 0;
-  height: 2px;
+  height: 0.25rem;
   width: 0%;
-  transition: width 1s ease;
 }
 
 .slider-bottom {
   right: 0;
   bottom: 0;
-  height: 2px;
+  height: 0.25rem;
   width: 0%;
-  transition: width 1s ease;
 }
 
 .slider-left {
   left: 0;
   bottom: 0;
-  width: 2px;
+  width: 0.25rem;
   height: 0%;
-  transition: height 1s ease;
 }
 
 .slider-right {
   right: 0;
   top: 0;
-  width: 2px;
+  width: 0.25rem;
   height: 0%;
-  transition: height 1s ease;
 }
 
 .card-container:hover .slider-top,
@@ -92,3 +89,7 @@ section {
 .card-container:hover .slider-right {
   height: 100%;
 }
+
+/* .card-container:hover .card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+} */
